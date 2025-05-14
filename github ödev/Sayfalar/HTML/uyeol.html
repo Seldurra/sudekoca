@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Gamepedia | Üye Ol</title>
+  <!-- favicon -->
+  <link rel="icon" href="../../Resimler/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../CSS/style_uyeol_giris.css">
+  <!-- SABİT ÜST BÖLÜM -->
+  <header class="header-banner">
+    </header>
+    <!-- menü alanı-->
+    <nav class="main-nav">
+    <!-- ana sayfa -->
+    <div class="icon-wrapper">
+    <a href="../../Sayfalar/index.html"><img src="../../Resimler/anasayfa_ikon.png" alt="Ana Sayfa" class="icon"/></a>
+    <span class="tooltip">Ana Sayfa</span>
+    </div>
+    <!-- haberler -->
+    <div class="icon-wrapper">
+    <a href="haberler.html"><img src="../../Resimler/haberler_ikon.png" alt="Haberler" class="icon"/></a>
+    <span class="tooltip">Oyun ve Teknoloji Haberleri</span>
+    </div>
+    <!-- blog -->
+    <div class="icon-wrapper">
+    <a href="bloglar.html"><img src="../../Resimler/blog_ikon.png" alt="Blog" /></a>
+    <span class="tooltip">Bloglar</span>
+    </div>
+    <!-- mini oyun -->
+    <div class="icon-wrapper">
+    <a href="mini_oyunlar.html"><img src="../../Resimler/mini_oyun_ikon.png" alt="Mini Oyunlar" class="icon"/></a>
+    <span class="tooltip">Mini Oyunlar</span>
+    </div>
+    <div class="icon-wrapper">
+    <a href="giris.html"><img src="../../Resimler/giris_ikon.png" alt="Giriş" class="icon" /></a>
+    <span class="tooltip">Giriş</span>
+    </div>
+    <div class="icon-wrapper">
+    <a href="uyeol.html"><img src="../../Resimler/uye_ol_ikon.png" alt="Üyelik" class="icon"/></a>
+    <span class="tooltip">Üye Ol</span>
+    </div>
+</nav>
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Üye Ol</h2>
+    <form id="registerForm">
+      <input type="text" id="registerUsername" placeholder="Kullanıcı Adı" required>
+      <input type="password" id="registerPassword" placeholder="Şifre" required>
+      <input type="email" id="registerEmail" placeholder="E-posta" required>
+
+      <select id="registerGender" required>
+        <option value="">Cinsiyet Seçiniz</option>
+        <option value="Kadın">Kadın</option>
+        <option value="Erkek">Erkek</option>
+        <option value="Diğer">Diğer</option>
+      </select>
+
+      <button type="submit">Kayıt Ol</button>
+    </form>
+    <p>Zaten üye misiniz? <a href="giris.html">Giriş Yap</a></p>
+  </div>
+
+  <script src="../JAVASCRİPT/uyeol_javascript.js"></script>
+</body>
+</html>

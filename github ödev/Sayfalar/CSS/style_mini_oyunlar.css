@@ -1,0 +1,153 @@
+*{
+    margin: 0; /* dış boşluklarını sıfırlar */
+    padding: 0; /* iç boşluklarını sıfırlar */
+    box-sizing: border-box; /* Kenarlık ve dolgu hesaplamaları */
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif; /* yazı tipi */
+    background-color:  #4b3928; /* arka plan rengi */
+    color: #f1e8e6; /* yazı rengi */
+  }
+  /* SABİT ÜST BÖLÜM */
+  .header-banner {
+    position: fixed; /* sabitleme */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 150px; 
+    background-image: url("../../Resimler/serit.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    z-index: 1000; 
+  }
+  /* menü alanı */
+  .main-nav {
+    margin-top: 160px; 
+    display: flex; /* yanyana ikonlar */
+    justify-content: center; 
+    gap: 20px; 
+    background-color: #2d2424; 
+    padding: 10px 0; 
+    }
+
+    .icon {
+        width: 64px;
+        height: 64px;
+        object-fit: contain; 
+        display: block;
+        margin: auto; 
+      }
+      .icon-wrapper {
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+      }
+    
+      .tooltip {
+        visibility: hidden;
+        background-color: #3b3b3b; 
+        color: #fff; 
+        text-align: center;
+        font-size: 12px;
+        padding: 6px 8px;
+        border-radius: 6px;
+      
+        
+        position: absolute;
+        bottom: 110%; 
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      
+        
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+      }
+      .icon-wrapper:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+  .main-nav img {
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer; /* üzerine gelince tıklanabilir işaretçi */
+    transition: transform 0.3s ease; /* yumuşak geçiş */
+  }
+  
+  .main-nav img:hover {
+    transform: scale(1.1);  
+  }
+  .filter-btn {
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px; 
+  background-color: #8d6e63;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+body {
+  background-color: #2c1b0e; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.title {
+  color: gold;
+  margin-bottom: 20px;
+}
+
+canvas {
+  background-color: #3e2c1b; 
+  border: 4px solid goldenrod;
+  image-rendering: pixelated;
+}
+#startBtn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: goldenrod;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#startBtn:hover {
+  background-color: #b8860b;
+}
+/* MOBİL UYUMLULUK */
+  @media (max-width: 768px) {
+    .logo-text {
+      font-size: 24px; /
+    }
+  
+    .main-nav {
+      flex-wrap: wrap; 
+      gap: 10px; /
+    }
+  
+    .main-nav img {
+      width: 30px; 
+      height: 30px;
+    }
+  
+    .header-banner {
+      height: 120px; 
+    }
+  }

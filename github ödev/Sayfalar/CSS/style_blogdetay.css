@@ -1,0 +1,195 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif; 
+    background-color:  #4b3928; 
+    color: #f1e8e6; 
+  }
+  /* SABİT ÜST BÖLÜM */
+  .header-banner {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 150px; 
+    background-image: url("../../Resimler/serit.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1000; 
+  }
+  /* menü alanı */
+  .main-nav {
+    margin-top: 160px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    background-color: #2d2424; 
+    padding: 10px 0; 
+    }
+
+    .icon {
+        width: 64px;
+        height: 64px;
+        object-fit: contain; 
+        display: block;
+        margin: auto; 
+      }
+      .icon-wrapper {
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+      }
+    
+      .tooltip {
+        visibility: hidden;
+        background-color: #3b3b3b; 
+        color: #fff; 
+        text-align: center;
+        font-size: 12px;
+        padding: 6px 8px;
+        border-radius: 6px;
+      
+        
+        position: absolute;
+        bottom: 110%; 
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      
+        
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+      }
+      .icon-wrapper:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+  .main-nav img {
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .main-nav img:hover {
+    transform: scale(1.1); 
+  }
+  /* Blog Sayfaları */
+.blog-detail-container {
+  width: 70%;
+  margin: 40px auto;
+  background-color: #f4e4c4;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.blog-detail-card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 2em;
+  color: #3e2c1b;
+}
+
+.blog-title1 {
+  font-family: 'Times New Roman', serif;
+  font-size: 3em;
+  color: #3e2c1b;
+}
+
+.blog-title2 {
+  font-family: 'Times New Roman', serif;
+  font-size: 1,5em;
+  color: #3e2c1b;
+}
+
+
+
+
+
+.blog-author {
+  font-size: 1.2em;
+  color: #6b4f2a;
+  margin-bottom: 20px;
+}
+
+.blog-text p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #3e2c1b;
+  margin-bottom: 20px;
+}
+
+#commentBox {
+  margin-top: 20px;
+  background-color: #f4e4c4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #3e2c1b;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #6b4f2a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8b6f3a;
+}
+
+#commentsSection {
+  margin-top: 20px;
+}
+
+.comment {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border-left: 5px solid #6b4f2a;
+}
+
+.comment p {
+  font-size: 1.1em;
+  color: #3e2c1b;
+}
+/* YUKARI ÇIK BUTONU */
+  .back-to-top {
+    position: fixed; 
+    bottom: 60px; 
+    right: 20px; 
+    width: 50px; 
+    height: 50px; 
+    z-index: 999; 
+    cursor: pointer; 
+  }
+  
+  .back-to-top img {
+    width: 100%; 
+    height: auto; 
+  }

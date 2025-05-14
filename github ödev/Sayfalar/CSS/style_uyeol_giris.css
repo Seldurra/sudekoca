@@ -1,0 +1,138 @@
+*{
+    margin: 0; /* dış boşluklarını sıfırlar */
+    padding: 0; /* iç boşluklarını sıfırlar */
+    box-sizing: border-box; /* Kenarlık ve dolgu hesaplamaları */
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif; /* yazı tipi */
+    background-color:  #4b3928; /* arka plan rengi */
+    color: #f1e8e6; /* yazı rengi */
+  }
+  /* SABİT ÜST BÖLÜM */
+  .header-banner {
+    position: fixed; /* sabitleme */
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 150px; 
+    background-image: url("../../Resimler/serit.jpg"); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    z-index: 1000; 
+  }
+  /* menü alanı */
+  .main-nav {
+    margin-top: 160px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    background-color: #2d2424; 
+    padding: 10px 0; 
+    }
+
+    .icon {
+        width: 64px;
+        height: 64px;
+        object-fit: contain; /* ikonlar orantılı şekilde küçülür/büyür */
+        display: block;
+        margin: auto; /* ortalamak için */
+      }
+      .icon-wrapper {
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+      }
+    
+      .tooltip {
+        visibility: hidden;
+        background-color: #3b3b3b; 
+        color: #fff; 
+        text-align: center;
+        font-size: 12px;
+        padding: 6px 8px;
+        border-radius: 6px;
+      
+        
+        position: absolute;
+        bottom: 110%; 
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+      
+        
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+      }
+      .icon-wrapper:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+      }
+  .main-nav img {
+    width: 40px; 
+    height: 40px; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .main-nav img:hover {
+    transform: scale(1.1); /* Üzerine gelince %10 büyür */
+  }
+.auth-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #3E2C1B;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.auth-container input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.auth-container button {
+  padding: 10px 20px;
+  background-color: #6B4226;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.auth-container button:hover {
+  background-color: #A17450;
+}
+/* MOBİL UYUMLULUK */
+  @media (max-width: 768px) {
+    .logo-text {
+      font-size: 24px; /* Küçük ekranlarda daha küçük logo yazısı */
+    }
+  
+    .main-nav {
+      flex-wrap: wrap; /* Menü ikonları alt alta gelebilir */
+      gap: 10px; /* Boşluk azaltılır */
+    }
+  
+    .main-nav img {
+      width: 30px; /* Küçük ekranlarda ikon boyutları küçülür */
+      height: 30px;
+    }
+  
+    .header-banner {
+      height: 120px; /* Banner yüksekliği küçük ekranlarda azaltılır */
+    }
+  }
+
